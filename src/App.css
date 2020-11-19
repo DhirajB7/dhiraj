@@ -1,3 +1,60 @@
 #downloadLink {
   text-decoration: none;
 }
+
+#buttonDownload {
+  background-color: #0a66c2;
+}
+
+#viewButton {
+  color: white;
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#fullStack {
+  background-color: #ff7f50;
+  color: white;
+}
+
+#frontEnd {
+  background-color: #4169e1;
+  color: white;
+}
+
+#backEnd {
+  background-color: #2e8b57;
+  color: white;
+}
+
+.MuiSvgIcon-root {
+  margin: 2% 8% 0% 8%;
+}
+
+#linkedin {
+  color: #0a66c2;
+  font-size: xxx-large;
+  cursor: pointer;
+}
+
+#whatsapp {
+  color: #075e54;
+  font-size: xxx-large;
+  cursor: pointer;
+}
+
+#mail {
+  color: #bb001b;
+  font-size: xxx-large;
+  cursor: pointer;
+}
+
+#phone {
+  color: #4285f4;
+  font-size: xxx-large;
+}

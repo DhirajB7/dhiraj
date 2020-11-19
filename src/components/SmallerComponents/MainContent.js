@@ -25,15 +25,15 @@ function MainContent() {
     <div className={classes.heroContent}>
       <Container maxWidth="sm">
         <Typography
-          component="h1"
-          variant="h2"
+          component="h2"
+          variant="h3"
           align="center"
           color="textPrimary"
           gutterBottom
         >
           <Heading />
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+        <Typography variant="h6" align="center" color="textSecondary" paragraph>
           <Body />
         </Typography>
         <div className={classes.heroButtons}>
@@ -45,14 +45,14 @@ function MainContent() {
                 target="_blank"
                 download={fileName}
               >
-                <Button variant="contained" color="primary">
+                <Button id="buttonDownload" variant="contained" color="primary">
                   Download Resume
                 </Button>
               </a>
             </Grid>
             <Grid item>
               <Button
-                variant="contained"
+                variant="outlined"
                 color="primary"
                 onClick={() => window.open(linkedInUrl, "_blank")}
               >

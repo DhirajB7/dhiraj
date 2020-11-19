@@ -7,6 +7,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Tooltip from "@material-ui/core/Tooltip";
+import Zoom from "@material-ui/core/Zoom";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -26,7 +28,16 @@ function OneCard(prop) {
 
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Card className={classes.card}>
+      <Card
+        id={
+          prop.type === "full"
+            ? "fullStack"
+            : prop.type === "back"
+            ? "backEnd"
+            : "frontEnd"
+        }
+        className={classes.card}
+      >
         <CardMedia
           className={classes.cardMedia}
           image={prop.imageUrl}
@@ -38,15 +49,25 @@ function OneCard(prop) {
           </Typography>
           <Typography>{prop.description}</Typography>
         </CardContent>
-        <CardActions>
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => window.open(prop.githubUrl, "_blank")}
-          >
-            View
-          </Button>
-        </CardActions>
+        {prop.haveCode === "true" ? (
+          <CardActions>
+            <Tooltip
+              TransitionComponent={Zoom}
+              title="View Source Code in GitHub"
+            >
+              <Button
+                id="viewButton"
+                size="small"
+                color="primary"
+                onClick={() => window.open(prop.githubUrl, "_blank")}
+              >
+                View
+              </Button>
+            </Tooltip>
+          </CardActions>
+        ) : (
+          ""
+        )}
       </Card>
     </Grid>
   );
