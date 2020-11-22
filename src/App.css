@@ -6,15 +6,12 @@
   background-color: #0a66c2;
 }
 
-#viewButton {
+#frontButton {
   color: white;
-  animation: blinker 3s linear infinite;
 }
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
+#backButton {
+  color: white;
 }
 
 #fullStack {
@@ -33,7 +30,7 @@
 }
 
 .MuiSvgIcon-root {
-  margin: 2% 8% 0% 8%;
+  margin: 2% 8% 2% 8%;
 }
 
 #linkedin {
@@ -57,4 +54,8 @@
 #phone {
   color: #4285f4;
   font-size: xxx-large;
+}
+
+.skillList {
+  text-align: left;
 }

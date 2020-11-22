@@ -5,10 +5,30 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
-import { linkedInUrl, mailUrl, watsappUrl, phoneUrl } from "../Constant";
+import {
+  linkedInUrl,
+  mailUrl,
+  watsappUrl,
+  phoneUrl,
+  actualUrl,
+} from "../Constant";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 import Popover from "@material-ui/core/Popover";
+import { Link } from "@material-ui/core";
+
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {"Copyright © "}
+      <Link color="inherit" href="https://dhirajb7.github.io/">
+        {actualUrl}
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -28,7 +48,6 @@ function Footer() {
   const toolTipLinkedin = "Check My Linkedin - " + linkedInUrl;
   const toolTipWhatsapp = "Contact Me Via Watsapp - " + phoneUrl;
   const toolTipMail = "Send Me Mail - " + mailUrl.substr(7);
-  const toolTipPhone = "Call Me - " + phoneUrl;
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handlePopoverOpen = (event) => {
@@ -94,6 +113,7 @@ function Footer() {
           </Popover>
         </React.Fragment>
       </Typography>
+      <Copyright />
     </footer>
   );
 }

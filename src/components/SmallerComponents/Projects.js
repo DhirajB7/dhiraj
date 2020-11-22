@@ -19,148 +19,79 @@ function Projects() {
       <Grid container spacing={4}>
         <OneCard
           heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
+          description="Image Description Image Description Image Description Image Description"
+          imageUrl={dogImage}
+          type="full"
+          haveCode="true"
+          imageTitle="random title"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
+        />
+
+        <OneCard
+          heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
           description="Image Description Image Description Image Description Image Description"
           imageUrl={dogImage}
           type="front"
           haveCode="true"
           imageTitle="random title"
-          githubUrl="https://dhirajb7.github.io"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
         />
 
         <OneCard
           heading="Image Heading"
-          description="Image Description Image Description Image Description Image DescriptionImage Description Image Description Image Description Image DescriptionImage Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="front"
-          haveCode="false"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.in"
-        />
-
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="full"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.com"
-        />
-        <OneCard
-          heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
           description="Image Description Image Description Image Description Image Description"
           imageUrl={dogImage}
           type="back"
           haveCode="true"
           imageTitle="random title"
-          githubUrl="https://dhirajb7.github.io"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
         />
-
         <OneCard
           heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="back"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.in"
-        />
-
-        <OneCard
-          heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
           description="Image Description Image Description Image Description Image Description"
           imageUrl={dogImage}
           type="full"
           haveCode="false"
           imageTitle="random title"
-          githubUrl="https://dhirajb7.github.com"
-        />
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="back"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.io"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
         />
 
         <OneCard
           heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="front"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.in"
-        />
-
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="full"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.com"
-        />
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="full"
-          haveCode="false"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.io"
-        />
-
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="back"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.in"
-        />
-
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="full"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.com"
-        />
-        <OneCard
-          heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
           description="Image Description Image Description Image Description Image Description"
           imageUrl={dogImage}
           type="front"
           haveCode="false"
           imageTitle="random title"
-          githubUrl="https://dhirajb7.github.io"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
         />
 
         <OneCard
           heading="Image Heading"
+          frontStack="ReactJs"
+          backStack="Spring Boot"
           description="Image Description Image Description Image Description Image Description"
           imageUrl={dogImage}
           type="back"
           haveCode="false"
           imageTitle="random title"
-          githubUrl="https://dhirajb7.github.in"
-        />
-
-        <OneCard
-          heading="Image Heading"
-          description="Image Description Image Description Image Description Image Description"
-          imageUrl={dogImage}
-          type="full"
-          haveCode="true"
-          imageTitle="random title"
-          githubUrl="https://dhirajb7.github.com"
+          githubFeUrl="https://dhirajb7.github.io"
+          githubBeUrl="https://dhirajb7.github.io"
         />
       </Grid>
     </Container>

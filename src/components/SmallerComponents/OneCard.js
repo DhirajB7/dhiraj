@@ -9,6 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
+import OneCardDescription from "./OneCardDescription";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -47,23 +48,52 @@ function OneCard(prop) {
           <Typography gutterBottom variant="h5" component="h2">
             {prop.heading}
           </Typography>
-          <Typography>{prop.description}</Typography>
+          <Typography>
+            <OneCardDescription
+              type={prop.type}
+              frontStack={prop.frontStack}
+              backStack={prop.backStack}
+              description={prop.description}
+            />
+          </Typography>
         </CardContent>
         {prop.haveCode === "true" ? (
           <CardActions>
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="View Source Code in GitHub"
-            >
-              <Button
-                id="viewButton"
-                size="small"
-                color="primary"
-                onClick={() => window.open(prop.githubUrl, "_blank")}
+            {prop.type === "full" || prop.type === "front" ? (
+              <Tooltip
+                TransitionComponent={Zoom}
+                title="View Front-End Source Code in GitHub"
               >
-                View
-              </Button>
-            </Tooltip>
+                <Button
+                  id="frontButton"
+                  size="small"
+                  color="primary"
+                  onClick={() => window.open(prop.githubFeUrl, "_blank")}
+                >
+                  Front-End
+                </Button>
+              </Tooltip>
+            ) : (
+              ""
+            )}
+
+            {prop.type === "full" || prop.type === "back" ? (
+              <Tooltip
+                TransitionComponent={Zoom}
+                title="View Back-End Source Code in GitHub"
+              >
+                <Button
+                  id="backButton"
+                  size="small"
+                  color="primary"
+                  onClick={() => window.open(prop.githubBeUrl, "_blank")}
+                >
+                  Back-End
+                </Button>
+              </Tooltip>
+            ) : (
+              ""
+            )}
           </CardActions>
         ) : (
           ""
