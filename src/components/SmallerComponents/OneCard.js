@@ -39,11 +39,15 @@ function OneCard(prop) {
         }
         className={classes.card}
       >
-        <CardMedia
-          className={classes.cardMedia}
-          image={prop.imageUrl}
-          title={prop.imageTitle}
-        />
+        {prop.imageUrl.length > 3 ? (
+          <CardMedia
+            className={classes.cardMedia}
+            image={prop.imageUrl}
+            title={prop.imageTitle}
+          />
+        ) : (
+          ""
+        )}
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
             {prop.heading}

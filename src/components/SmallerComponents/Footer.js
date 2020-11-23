@@ -14,8 +14,8 @@ import {
 } from "../Constant";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
-import Popover from "@material-ui/core/Popover";
-import { Link } from "@material-ui/core";
+import { Link, Snackbar } from "@material-ui/core";
+import MuiAlert from "@material-ui/lab/Alert";
 
 function Copyright() {
   return (
@@ -30,16 +30,14 @@ function Copyright() {
   );
 }
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
-  },
-  popover: {
-    pointerEvents: "none",
-  },
-  paper: {
-    padding: theme.spacing(1),
   },
 }));
 
@@ -48,17 +46,20 @@ function Footer() {
   const toolTipLinkedin = "Check My Linkedin - " + linkedInUrl;
   const toolTipWhatsapp = "Contact Me Via Watsapp - " + phoneUrl;
   const toolTipMail = "Send Me Mail - " + mailUrl.substr(7);
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const toolTipPhone = "Call Me " + phoneUrl;
+  const [open, setOpen] = React.useState(false);
 
-  const handlePopoverOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleClick = () => {
+    setOpen(true);
   };
 
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
 
-  const open = Boolean(anchorEl);
+    setOpen(false);
+  };
 
   return (
     <footer className={classes.footer}>
@@ -83,34 +84,14 @@ function Footer() {
           <MailIcon id="mail" onClick={() => window.open(mailUrl, "_blank")} />
         </Tooltip>
         <React.Fragment>
-          <PhoneIcon
-            id="phone"
-            aria-owns={open ? "mouse-over-popover" : undefined}
-            aria-haspopup="true"
-            onMouseEnter={handlePopoverOpen}
-            onMouseLeave={handlePopoverClose}
-          />
-          <Popover
-            id="mouse-over-popover"
-            className={classes.popover}
-            classes={{
-              paper: classes.paper,
-            }}
-            open={open}
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "left",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "left",
-            }}
-            onClose={handlePopoverClose}
-            disableRestoreFocus
-          >
-            <Typography>Contact Number {phoneUrl}</Typography>
-          </Popover>
+          <Tooltip TransitionComponent={Zoom} title={toolTipPhone}>
+            <PhoneIcon id="phone" onClick={handleClick} />
+          </Tooltip>
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity="success">
+              Reach Me at {phoneUrl} .
+            </Alert>
+          </Snackbar>
         </React.Fragment>
       </Typography>
       <Copyright />

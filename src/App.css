@@ -54,8 +54,15 @@
 #phone {
   color: #4285f4;
   font-size: xxx-large;
+  cursor: pointer;
 }
 
 .skillList {
   text-align: left;
+}
+
+#projectLink {
+  margin: 0% 0% 0% 0%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
 }
