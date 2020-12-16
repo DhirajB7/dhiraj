@@ -5,15 +5,15 @@ import Footer from "./SmallerComponents/Footer";
 import MainContent from "./SmallerComponents/MainContent";
 
 export default function Portolio() {
-  return (
-    <React.Fragment>
-      <CssBaseline />
+	return (
+		<React.Fragment>
+			<CssBaseline />
 
-      <MainContent />
+			<MainContent />
 
-      <Projects />
+			<Projects />
 
-      <Footer />
-    </React.Fragment>
-  );
+			<Footer />
+		</React.Fragment>
+	);
 }
