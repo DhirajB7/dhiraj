@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import Heading from "./Heading";
 import Body from "./Body";
 import { linkedInUrl, name } from "../Constant";
 import resumePdf from "../images/resume.pdf";
@@ -23,21 +22,12 @@ function MainContent() {
 	const fileName = name.toUpperCase() + " Resume.pdf";
 	return (
 		<div className={classes.heroContent}>
-			<Container maxWidth="sm">
-				<Typography
-					component="h2"
-					variant="h3"
-					align="center"
-					color="textPrimary"
-					gutterBottom
-				>
-					<Heading />
-				</Typography>
-				<Typography variant="h6" align="center" color="textSecondary" paragraph>
+			<Container maxWidth="md">
+				<Typography variant="h5" align="left" paragraph>
 					<Body />
 				</Typography>
 				<div className={classes.heroButtons}>
-					<Grid container spacing={2} justify="center">
+					<Grid container spacing={2} justify="left">
 						<Grid item>
 							<a
 								id="downloadLink"

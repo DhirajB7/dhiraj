@@ -6,12 +6,15 @@ import Zoom from "@material-ui/core/Zoom";
 function Body() {
 	return (
 		<React.Fragment>
-			<p className="skillList">
-				Hello, I am Dhiraj working as Full Stack Developer. Like to Code & Learn
-				new Technologies.
-      </p>
+			<p className="skillList" id="intro">
+				Hello, Thanks for stopping by. <br></br>
+				My name is Dhiraj. I am working as Full Stack Developer.<br></br>
+				Below mentioned are information about me.<br></br>
+      		</p>
+
+			  <div id = "skill">
 			<h4>
-				<u className="skillList">Skill Set</u>
+				<u className="skillList" >Skill Set</u>
 			</h4>
 			<ul className="skillList">
 				<li>Language - Java, JavaScript, Python</li>
@@ -20,6 +23,9 @@ function Body() {
 					BackEnd - Spring Boot, Dropwizard, Express JS, PostgreSQL, MongoDB
         </li>
 			</ul>
+			</div>
+
+			<div id = "project">
 			<h4>
 				<u>Projects</u>{" "}
 				<Tooltip TransitionComponent={Zoom} title="Navigate To Projects">
@@ -51,12 +57,16 @@ function Body() {
 					</li>
 				</ul>
 			</p>
+			</div>
+
+			<div id = "resume">
 			<h4>
 				<u>Resume & Linkdin</u>
 			</h4>
 			<p className="skillList">
 				Below are Buttons to Download Resume & To Navigate to Linkedin.
       </p>
+	  </div>
 		</React.Fragment>
 	);
 }

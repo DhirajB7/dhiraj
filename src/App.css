@@ -66,3 +66,19 @@
   cursor: pointer;
   color: rgba(0, 0, 0, 0.54);
 }
+
+#intro{
+  color: #4169e1;
+}
+
+#skill{
+  color: #ff7f50;
+}
+
+#project{
+  color: #2e8b57;
+}
+
+#resume{
+  color:  #ff7f50;
+}
