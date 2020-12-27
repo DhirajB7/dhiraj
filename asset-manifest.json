@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/dhirajb7.github.io/static/css/main.54ef455c.chunk.css",
+    "main.js": "/dhirajb7.github.io/static/js/main.5a2fc2ac.chunk.js",
+    "main.js.map": "/dhirajb7.github.io/static/js/main.5a2fc2ac.chunk.js.map",
+    "runtime-main.js": "/dhirajb7.github.io/static/js/runtime-main.077bd351.js",
+    "runtime-main.js.map": "/dhirajb7.github.io/static/js/runtime-main.077bd351.js.map",
+    "static/js/2.65c715bd.chunk.js": "/dhirajb7.github.io/static/js/2.65c715bd.chunk.js",
+    "static/js/2.65c715bd.chunk.js.map": "/dhirajb7.github.io/static/js/2.65c715bd.chunk.js.map",
+    "index.html": "/dhirajb7.github.io/index.html",
+    "static/css/main.54ef455c.chunk.css.map": "/dhirajb7.github.io/static/css/main.54ef455c.chunk.css.map",
+    "static/js/2.65c715bd.chunk.js.LICENSE.txt": "/dhirajb7.github.io/static/js/2.65c715bd.chunk.js.LICENSE.txt",
+    "static/media/resume.ecad5afb.pdf": "/dhirajb7.github.io/static/media/resume.ecad5afb.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.077bd351.js",
+    "static/js/2.65c715bd.chunk.js",
+    "static/css/main.54ef455c.chunk.css",
+    "static/js/main.5a2fc2ac.chunk.js"
+  ]
+}
