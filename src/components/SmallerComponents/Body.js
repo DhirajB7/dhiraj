@@ -7,7 +7,7 @@ function Body() {
 	return (
 		<React.Fragment>
 			<p className="skillList" id="intro">
-				Hello, Thanks for stopping by. <br></br>
+				Hey There, Thank you for visiting my portfolio. <br></br>
 				My name is Dhiraj. I am working as Full Stack Developer.<br></br>
 				Below mentioned are information about me.<br></br>
       		</p>
