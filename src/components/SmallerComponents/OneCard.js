@@ -50,7 +50,7 @@ function OneCard(prop) {
 					)}
 				<CardContent className={classes.cardContent}>
 					<Typography gutterBottom variant="h5" component="h2">
-						{prop.heading}
+						<u>{prop.heading}</u>
 					</Typography>
 					<Typography>
 						<OneCardDescription

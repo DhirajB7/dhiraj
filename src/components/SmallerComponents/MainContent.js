@@ -43,11 +43,12 @@ function MainContent() {
 								id="downloadLink"
 								href={resumePdf}
 								target="_blank"
+								rel="noreferrer"
 								download={fileName}
 							>
 								<Button id="buttonDownload" variant="contained" color="primary">
 									Download Resume
-                </Button>
+                				</Button>
 							</a>
 						</Grid>
 						<Grid item>
@@ -57,7 +58,7 @@ function MainContent() {
 								onClick={() => window.open(linkedInUrl, "_blank")}
 							>
 								go to Linkedin
-              </Button>
+              				</Button>
 						</Grid>
 					</Grid>
 				</div>
