@@ -7,11 +7,9 @@ function Body() {
 	return (
 		<React.Fragment>
 			<p className="skillList" id="intro">
-				Hey There, Thank you for visiting my portfolio.
-      		</p>
-
-			  <p className="skillList" id="intro">
-				My name is Dhiraj. I am working as Full Stack Developer.
+				Hey There, My name is Dhiraj.<br></br> 
+				I am working as Full Stack Developer.<br></br>
+				Thank you for visiting my portfolio.
       		</p>
 
 			  <div id = "skill">
