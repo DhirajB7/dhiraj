@@ -211,6 +211,19 @@ function Projects() {
 						githubFeUrl="https://github.com/DhirajB7/TwoPlayerScoreKeeping"
 						githubBeUrl=""
 					/>
+
+					<OneCard
+						heading="GMAT SCORE ANALYSIS"
+						frontStack="HTML, CSS & JAVASCRIPT"
+						backStack=""
+						description="Analysis of Gmate Score.Takes Current Score and Target Score in Quant Section And Verbal Section & produces Visual Graph"
+						imageUrl=""
+						type="front"
+						haveCode="true"
+						imageTitle="GMAT SCORE ANALYSIS"
+						githubFeUrl="https://github.com/DhirajB7/gmate"
+						githubBeUrl=""
+					/>
 				</Grid>
 			</Container>
 		</div>
