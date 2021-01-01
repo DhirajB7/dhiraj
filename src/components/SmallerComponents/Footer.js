@@ -14,12 +14,12 @@ import {
 } from "../Constant";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
-import { Link, Snackbar } from "@material-ui/core";
+import { Link, Snackbar, Container } from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
 
 function Copyright() {
 	return (
-		<Typography variant="body2" color="textSecondary" align="center">
+		<Typography variant="body2"  className = "info" align="center">
 			{"Copyright © "}
 			<Link color="inherit" href="https://dhirajb7.github.io/">
 				{actualUrl}
@@ -62,40 +62,40 @@ function Footer() {
 	};
 
 	return (
-		<footer className={classes.footer}>
-			<Typography variant="h4" align="center" gutterBottom>
-				<u>CONTACT DETAILS</u>
-			</Typography>
+			<footer id = "footer" className={classes.footer}>
+				<Typography  className = "info" variant="h4" align="center" gutterBottom>
+					<u>CONTACT DETAILS</u>
+				</Typography>
 
-			<Typography variant="subtitle1" align="center" component="p">
-				<Tooltip TransitionComponent={Zoom} title={toolTipLinkedin}>
-					<LinkedInIcon
-						id="linkedin"
-						onClick={() => window.open(linkedInUrl, "_blank")}
-					/>
-				</Tooltip>
-				<Tooltip TransitionComponent={Zoom} title={toolTipWhatsapp}>
-					<WhatsAppIcon
-						id="whatsapp"
-						onClick={() => window.open(watsappUrl, "_blank")}
-					/>
-				</Tooltip>
-				<Tooltip TransitionComponent={Zoom} title={toolTipMail}>
-					<MailIcon id="mail" onClick={() => window.open(mailUrl, "_blank")} />
-				</Tooltip>
-				<React.Fragment>
-					<Tooltip TransitionComponent={Zoom} title={toolTipPhone}>
-						<PhoneIcon id="phone" onClick={handleClick} />
+				<Typography variant="subtitle1" align="center" component="p">
+					<Tooltip TransitionComponent={Zoom} title={toolTipLinkedin}>
+						<LinkedInIcon
+							id="linkedin"
+							onClick={() => window.open(linkedInUrl, "_blank")}
+						/>
 					</Tooltip>
-					<Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-						<Alert onClose={handleClose} severity="success">
-							Reach Me at {phoneUrl} .
+					<Tooltip TransitionComponent={Zoom} title={toolTipWhatsapp}>
+						<WhatsAppIcon
+							id="whatsapp"
+							onClick={() => window.open(watsappUrl, "_blank")}
+						/>
+					</Tooltip>
+					<Tooltip TransitionComponent={Zoom} title={toolTipMail}>
+						<MailIcon id="mail" onClick={() => window.open(mailUrl, "_blank")} />
+					</Tooltip>
+					<React.Fragment>
+						<Tooltip TransitionComponent={Zoom} title={toolTipPhone}>
+							<PhoneIcon id="phone" onClick={handleClick} />
+						</Tooltip>
+						<Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+							<Alert onClose={handleClose} severity="success">
+								Reach Me at {phoneUrl} .
             </Alert>
-					</Snackbar>
-				</React.Fragment>
-			</Typography>
-			<Copyright />
-		</footer>
+						</Snackbar>
+					</React.Fragment>
+				</Typography>
+				<Copyright />
+			</footer>
 	);
 }
 

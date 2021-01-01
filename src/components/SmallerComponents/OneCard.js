@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -6,10 +6,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 import OneCardDescription from "./OneCardDescription";
+import { Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
 	card: {
@@ -27,8 +27,44 @@ const useStyles = makeStyles((theme) => ({
 function OneCard(prop) {
 	const classes = useStyles();
 
+	const [xs,setXs] = useState()
+
+	const [sm,setSm] = useState()
+
+	const [md,setMd] = useState()
+
+	useEffect(()=>{
+
+		const res = window.outerWidth
+
+		
+		if(res > 768){
+			
+			setMd(4)
+			setSm(false)
+			setXs(false)
+			
+		}else if(res > 480){
+			
+			setMd(false)
+			setSm(6)
+			setXs(false)
+			
+		}else{
+			
+			setMd(false)
+			setSm(false)
+			setXs(12)
+			
+		}
+		
+		console.log(res+" "+xs+" "+sm+" "+md);
+		
+	},[])
+     
+
 	return (
-		<Grid item xs={12} sm={6} md={4}>
+		<Grid item xs={xs} sm={sm} md={md}>
 			<Card
 				id={
 					prop.type === "full"

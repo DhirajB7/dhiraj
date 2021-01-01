@@ -14,34 +14,8 @@ const useStyles = makeStyles((theme) => ({
 function Projects() {
 	const classes = useStyles();
 	return (
-		<div id="projects">
-			<Container className={classes.cardGrid} maxWidth="md">
-				<Grid container spacing={2}>
-					{/* <OneCard
-						heading="Electric Company"
-						frontStack="Javascript, ReactJS, HTML5, CSS3"
-						backStack=""
-						description="to be filled"
-						imageUrl=""
-						type="front"
-						haveCode="false"
-						imageTitle=""
-						githubFeUrl=""
-						githubBeUrl="" 
-					/> */}
-
-					{/* <OneCard
-						heading="Automobile Insurance"
-						frontStack=""
-						backStack="Java, Dropwizard, PostgreSQL"
-						description="to be filled"
-						imageUrl=""
-						type="back"
-						haveCode="false"
-						imageTitle="random title"
-						githubFeUrl="https://dhirajb7.github.io"
-						githubBeUrl="https://dhirajb7.github.io"
-						/> */}
+			<Container id="projects" className={classes.cardGrid} maxWidth="md">
+				<Grid container spacing={4}>
 
 					<OneCard
 						heading="Nutrifi Me"
@@ -67,7 +41,7 @@ function Projects() {
 						imageTitle="Dropwizard Strater Template"
 						githubFeUrl=""
 						githubBeUrl="https://github.com/DhirajB7/DropwizardPSSQL"
-					/>
+						/>
 
 					<OneCard
 						heading="Express JWT MongoDB Starter"
@@ -80,7 +54,7 @@ function Projects() {
 						imageTitle="Express JWT MongoDB Starter Template"
 						githubFeUrl=""
 						githubBeUrl="https://github.com/DhirajB7/NodeExpressMongoDBJwtStarterTemplate"
-					/>
+						/>
 
 					<OneCard
 						heading="Employee Management"
@@ -93,7 +67,7 @@ function Projects() {
 						imageTitle="User Management Application"
 						githubFeUrl="https://github.com/DhirajB7/UserProjectFrontend"
 						githubBeUrl="https://github.com/DhirajB7/UserProjectBackend"
-					/>
+						/>
 
 					<OneCard
 						heading="External Sorting"
@@ -106,7 +80,7 @@ function Projects() {
 						imageTitle="External Sorting Of Huge File In Memory"
 						githubFeUrl=""
 						githubBeUrl="https://github.com/DhirajB7/ExternalSortingStrings"
-					/>
+						/>
 
 					<OneCard
 						heading="Data Management"
@@ -119,7 +93,7 @@ function Projects() {
 						imageTitle="Data Management - user or employee or student Management"
 						githubFeUrl=""
 						githubBeUrl="https://github.com/DhirajB7/EmployeeManagementSystem"
-					/>
+						/>
 
 					<OneCard
 						heading="Product Rating"
@@ -132,7 +106,7 @@ function Projects() {
 						imageTitle="Product Rating BAckend Service"
 						githubFeUrl=""
 						githubBeUrl="https://github.com/DhirajB7/ProductRatingBackend"
-					/>
+						/>
 
 					<OneCard
 						heading="Image Search"
@@ -145,7 +119,7 @@ function Projects() {
 						imageTitle="Image Search Application"
 						githubFeUrl="https://github.com/DhirajB7/ImageSearch"
 						githubBeUrl=""
-					/>
+						/>
 
 					<OneCard
 						heading="MEME Generator"
@@ -226,7 +200,6 @@ function Projects() {
 					/>
 				</Grid>
 			</Container>
-		</div>
 	);
 }
 

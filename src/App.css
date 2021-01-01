@@ -1,3 +1,7 @@
+.info{
+  color: #075e54;
+}
+
 #downloadLink {
   text-decoration: none;
 }
@@ -57,28 +61,8 @@
   cursor: pointer;
 }
 
-.skillList {
-  text-align: left;
-}
-
 #projectLink {
   margin: 0% 0% 0% 0%;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.54);
-}
-
-#intro {
-  color: #075e54;
-}
-
-#skill {
-  color: #075e54;
-}
-
-#project {
-  color: #075e54;
-}
-
-#resume {
-  color: #075e54;
 }

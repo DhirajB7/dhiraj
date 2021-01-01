@@ -1,12 +1,10 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Body from "./Body";
-import { linkedInUrl, name } from "../Constant";
-import resumePdf from "../images/resume.pdf";
+import Buttons from "./Buttons";
+import Header from "./Header";
 
 const useStyles = makeStyles((theme) => ({
 	heroContent: {
@@ -19,38 +17,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 function MainContent() {
 	const classes = useStyles();
-	const fileName = name.toUpperCase() + " Resume.pdf";
 	return (
 		<div className={classes.heroContent}>
-			<Container maxWidth="md">
+			<Container maxWidth="sm">
 				<Typography variant="h5" align="left" paragraph>
+					<Header/>
 					<Body />
 				</Typography>
 				<div className={classes.heroButtons}>
-					<Grid container spacing={2} justify="left">
-						<Grid item>
-							<a
-								id="downloadLink"
-								href={resumePdf}
-								target="_blank"
-								rel="noreferrer"
-								download={fileName}
-							>
-								<Button id="buttonDownload" variant="contained" color="primary">
-									Download Resume
-                				</Button>
-							</a>
-						</Grid>
-						<Grid item>
-							<Button
-								variant="outlined"
-								color="primary"
-								onClick={() => window.open(linkedInUrl, "_blank")}
-							>
-								go to Linkedin
-              				</Button>
-						</Grid>
-					</Grid>
+					<Buttons/>
 				</div>
 			</Container>
 		</div>
