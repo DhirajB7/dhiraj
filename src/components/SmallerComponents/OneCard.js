@@ -33,6 +33,10 @@ function OneCard(prop) {
 
 	const [md,setMd] = useState()
 
+	const [headingName,setHeadingName] = useState("")
+
+	const [data,setData] = useState("")
+
 	useEffect(()=>{
 
 		const res = window.outerWidth
@@ -40,25 +44,29 @@ function OneCard(prop) {
 		
 		if(res > 768){
 			
-			setMd(4)
+			setMd(6)
 			setSm(false)
 			setXs(false)
+			setHeadingName("h4")
+			setData("h5")
 			
 		}else if(res > 480){
 			
 			setMd(false)
-			setSm(6)
+			setSm(12)
 			setXs(false)
+			setHeadingName("h3")
+			setData("h4")
 			
 		}else{
 			
 			setMd(false)
 			setSm(false)
 			setXs(12)
+			setHeadingName("h3")
+			setData("h4")
 			
 		}
-		
-		console.log(res+" "+xs+" "+sm+" "+md);
 		
 	},[])
      
@@ -85,10 +93,10 @@ function OneCard(prop) {
 						""
 					)}
 				<CardContent className={classes.cardContent}>
-					<Typography gutterBottom variant="h5" component="h2">
+					<Typography gutterBottom variant={headingName} component="h2">
 						<u>{prop.heading}</u>
 					</Typography>
-					<Typography>
+					<Typography variant={data} component="h2">
 						<OneCardDescription
 							type={prop.type}
 							frontStack={prop.frontStack}
@@ -106,7 +114,7 @@ function OneCard(prop) {
 							>
 								<Button
 									id="frontButton"
-									size="small"
+									size="large"
 									color="primary"
 									onClick={() => window.open(prop.githubFeUrl, "_blank")}
 								>
@@ -124,7 +132,7 @@ function OneCard(prop) {
 							>
 								<Button
 									id="backButton"
-									size="small"
+									size="large"
 									color="primary"
 									onClick={() => window.open(prop.githubBeUrl, "_blank")}
 								>

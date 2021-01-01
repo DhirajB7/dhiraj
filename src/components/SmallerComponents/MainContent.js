@@ -19,7 +19,7 @@ function MainContent() {
 	const classes = useStyles();
 	return (
 		<div className={classes.heroContent}>
-			<Container maxWidth="sm">
+			<Container maxWidth="md">
 				<Typography variant="h5" align="left" paragraph>
 					<Header/>
 					<Body />

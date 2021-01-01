@@ -15,7 +15,7 @@ function Projects() {
 	const classes = useStyles();
 	return (
 			<Container id="projects" className={classes.cardGrid} maxWidth="md">
-				<Grid container spacing={4}>
+				<Grid container spacing={2}>
 
 					<OneCard
 						heading="Nutrifi Me"

@@ -16,13 +16,14 @@ function Buttons() {
 						rel="noreferrer"
 						download={fileName}
 					>
-						<Button id="buttonDownload" variant="contained" color="primary">
+						<Button id="buttonDownload" size="large" variant="contained" color="primary">
 							Download Resume
                 				</Button>
 					</a>
 				</Grid>
 				<Grid item>
 					<Button
+						size="large"
 						variant="outlined"
 						color="primary"
 						onClick={() => window.open(linkedInUrl, "_blank")}

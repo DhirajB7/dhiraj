@@ -63,7 +63,7 @@ function Footer() {
 
 	return (
 			<footer id = "footer" className={classes.footer}>
-				<Typography  className = "info" variant="h4" align="center" gutterBottom>
+				<Typography  className = "info" variant="h3" align="center" gutterBottom>
 					<u>CONTACT DETAILS</u>
 				</Typography>
 
