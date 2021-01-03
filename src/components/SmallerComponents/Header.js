@@ -31,7 +31,7 @@ function Header() {
 		<React.Fragment>
 
 			<Typography component="h1" variant={headingName} align="left" className = "info" gutterBottom>
-				Hey There ,
+				Hello There ,
             </Typography>
 
 		</React.Fragment>

@@ -14,7 +14,7 @@ import {
 } from "../Constant";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
-import { Link, Snackbar, Container } from "@material-ui/core";
+import { Link, Snackbar} from "@material-ui/core";
 import MuiAlert from "@material-ui/lab/Alert";
 
 function Copyright() {
@@ -28,7 +28,7 @@ function Copyright() {
 			{"."}
 		</Typography>
 	);
-}
+} 
 
 function Alert(props) {
 	return <MuiAlert elevation={6} variant="filled" {...props} />;
