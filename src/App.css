@@ -1,9 +1,9 @@
 #root>div{
-  background-color: #141414 ;
+  background-color: #2F2F31 ;
 }
 
 .info {
-  color: #075E40;
+  color: teal;
 }
 
 .MuiButton-outlinedPrimary{
@@ -15,30 +15,30 @@
 }
 
 #buttonDownload {
-  background-color:  #075E40;
+  background-color:  teal;
 }
 
 #frontButton {
-  color: #141414;
+  color: #2F2F31;
 }
 
 #backButton {
-  color: #141414;
+  color: #2F2F31;
 }
 
 #fullStack {
   background-color: #ff7f50;
-  color: #141414;
+  color: #2F2F31;
 }
 
 #frontEnd {
   background-color: #4169e1;
-  color: #141414;
+  color: #2F2F31;
 }
 
 #backEnd {
   background-color: #2e8b57;
-  color: #141414;
+  color: #2F2F31;
 }
 
 .MuiSvgIcon-root {
@@ -72,10 +72,10 @@
 #projectLink {
   margin: 0% 0% 0% 0%;
   cursor: pointer;
-  color:  #075E40;
+  color:  teal;
 }
 
 #footer{
-  background-color: #141414 ;
+  background-color: #2F2F31 ;
 }
 
