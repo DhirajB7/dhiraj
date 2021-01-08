@@ -1,5 +1,13 @@
-.info{
-  color: #075e54;
+#root>div{
+  background-color: #141414 ;
+}
+
+.info {
+  color: #075E40;
+}
+
+.MuiButton-outlinedPrimary{
+  color: #075E40;
 }
 
 #downloadLink {
@@ -7,30 +15,30 @@
 }
 
 #buttonDownload {
-  background-color: #0a66c2;
+  background-color:  #075E40;
 }
 
 #frontButton {
-  color: white;
+  color: #141414;
 }
 
 #backButton {
-  color: white;
+  color: #141414;
 }
 
 #fullStack {
   background-color: #ff7f50;
-  color: white;
+  color: #141414;
 }
 
 #frontEnd {
   background-color: #4169e1;
-  color: white;
+  color: #141414;
 }
 
 #backEnd {
   background-color: #2e8b57;
-  color: white;
+  color: #141414;
 }
 
 .MuiSvgIcon-root {
@@ -64,11 +72,10 @@
 #projectLink {
   margin: 0% 0% 0% 0%;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.54);
+  color:  #075E40;
 }
 
-#loader{
-  position: absolute;
-  left: 50%;
-  top: 50%;
+#footer{
+  background-color: #141414 ;
 }
+
