@@ -27,49 +27,49 @@ const useStyles = makeStyles((theme) => ({
 function OneCard(prop) {
 	const classes = useStyles();
 
-	const [xs,setXs] = useState()
+	const [xs, setXs] = useState()
 
-	const [sm,setSm] = useState()
+	const [sm, setSm] = useState()
 
-	const [md,setMd] = useState()
+	const [md, setMd] = useState()
 
-	const [headingName,setHeadingName] = useState("")
+	const [headingName, setHeadingName] = useState("")
 
-	const [data,setData] = useState("")
+	const [data, setData] = useState("")
 
-	useEffect(()=>{
+	useEffect(() => {
 
 		const res = window.outerWidth
 
-		
-		if(res > 768){
-			
+
+		if (res > 768) {
+
 			setMd(6)
 			setSm(false)
 			setXs(false)
 			setHeadingName("h4")
 			setData("h5")
-			
-		}else if(res > 480){
-			
+
+		} else if (res > 480) {
+
 			setMd(false)
 			setSm(12)
 			setXs(false)
 			setHeadingName("h3")
 			setData("h4")
-			
-		}else{
-			
+
+		} else {
+
 			setMd(false)
 			setSm(false)
 			setXs(12)
 			setHeadingName("h3")
 			setData("h4")
-			
+
 		}
-		
-	},[])
-     
+
+	}, [])
+
 
 	return (
 		<Grid item xs={xs} sm={sm} md={md}>
@@ -83,15 +83,12 @@ function OneCard(prop) {
 				}
 				className={classes.card}
 			>
-				{prop.imageUrl.length > 3 ? (
-					<CardMedia
-						className={classes.cardMedia}
-						image={prop.imageUrl}
-						title={prop.imageTitle}
-					/>
-				) : (
-						""
-					)}
+				<CardMedia
+					className={classes.cardMedia}
+					image={prop.imageUrl}
+					title={prop.imageTitle}
+				/>
+
 				<CardContent className={classes.cardContent}>
 					<Typography gutterBottom variant={headingName} component="h2">
 						<u>{prop.heading}</u>
