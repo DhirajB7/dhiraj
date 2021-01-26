@@ -6,21 +6,17 @@ import Projects from "./components/SmallerComponents/Projects";
 import Footer from "./components/SmallerComponents/Footer";
 
 function App() {
+  return (
+    <React.Fragment>
+      <CssBaseline />
 
-	return (
+      <MainContent show={false} />
 
-		<React.Fragment>
+      <Projects />
 
-			<CssBaseline />
-
-			<MainContent />
-
-			<Projects />
-
-			<Footer />
-
-		</React.Fragment>
-	)
+      <Footer />
+    </React.Fragment>
+  );
 }
 
 export default App;
