@@ -37,11 +37,9 @@ function Body(props) {
         </h3>
 
         <ul>
-          <li>Language - Java, JavaScript, Python</li>
-          <li>FrontEnd - React JS, HTML5, CSS3</li>
-          <li>
-            BackEnd - Spring Boot, Dropwizard, Express JS, PostgreSQL, MongoDB
-          </li>
+          <li> Language <br></br> <b>Java, JavaScript, Python</b></li> <br></br> 
+          <li> FrontEnd <br></br> <b>React JS, HTML5, CSS3, JavaScript</b></li> <br></br> 
+          <li> BackEnd <br></br> <b>Spring Boot, Dropwizard, Express JS, Flask, PostgreSQL, MongoDB</b> </li>
         </ul>
       </Typography>
 
@@ -55,12 +53,12 @@ function Body(props) {
           </Tooltip>
         </h3>
         <Typography className="info" variant={data} align="left" paragraph>
-          Below are few Projects done by me. These Projects are Personal &
-          Professional. Front-End Projects are in Blue, Back-End Projects are in
-          Green & Full Stack Projects are in Orange.
+          Below are few Projects done by me.These are Personal<span hidden>&
+          Professional</span> projects.<br></br> <span style = {{"color" : "#4169e1"}}>Front-End Projects are in Blue</span> , <span style = {{"color" : "#2e8b57"}}>Back-End Projects are in
+          Green</span> & <span style = {{"color" : "#ff7f50"}}>Full Stack Projects are in Orange</span>.
         </Typography>
 
-        <Typography className="info" variant={data} align="left" paragraph>
+        <Typography hidden className="info" variant={data} align="left" paragraph>
           <ul>
             <li>Personal Project - Source code will be avliable.</li>
 
