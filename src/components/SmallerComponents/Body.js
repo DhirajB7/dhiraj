@@ -37,7 +37,7 @@ function Body(props) {
         </h3>
 
         <ul>
-          <li> Language <br></br> <b>Java, JavaScript, Python</b></li> <br></br> 
+          <li> Language <br></br> <b>Java, JavaScript, Kotlin, Python</b></li> <br></br> 
           <li> FrontEnd <br></br> <b>React JS, HTML5, CSS3, JavaScript</b></li> <br></br> 
           <li> BackEnd <br></br> <b>Spring Boot, Dropwizard, Express JS, Flask, PostgreSQL, MongoDB</b> </li>
         </ul>
