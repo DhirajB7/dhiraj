@@ -24,7 +24,7 @@ function MainContent(props) {
           <Header />
           <Body show={props.show} />
         </Typography>
-        <div className={classes.heroButtons} hidden={!props.show}>
+        <div className={classes.heroButtons} style={props.show ? {display:"inherit"} : {display:"none"}}>
           <Buttons />
         </div>
       </Container>

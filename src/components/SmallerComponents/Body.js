@@ -37,9 +37,9 @@ function Body(props) {
         </h3>
 
         <ul>
-          <li> Language <br></br> <b>Java, JavaScript, Kotlin, Python</b></li> <br></br> 
+          <li> Language <br></br> <b>Java, JavaScript, Python</b></li> <br></br> 
           <li> FrontEnd <br></br> <b>React JS, HTML5, CSS3, JavaScript</b></li> <br></br> 
-          <li> BackEnd <br></br> <b>Spring Boot, Dropwizard, Express JS, Flask, PostgreSQL, MongoDB</b> </li>
+          <li> BackEnd <br></br> <b>Spring Boot, Node JS, Dropwizard, PostgreSQL, MongoDB</b> </li>
         </ul>
       </Typography>
 
@@ -67,27 +67,12 @@ function Body(props) {
         </Typography>
       </Typography>
 
-      <Typography className="info" variant={data} align="left" paragraph>
-        <h3>
-          <u>Contact</u>{" "}
-          <Tooltip
-            TransitionComponent={Zoom}
-            title="Navigate To Contact Details"
-          >
-            <a href="#footer">
-              <LinkIcon id="projectLink" />
-            </a>
-          </Tooltip>
-        </h3>
-        Click on above link to Navigate to contact details.
-      </Typography>
-
       <Typography
         className="info"
         variant={data}
         align="left"
         paragraph
-        hidden={!props.show}
+        style={props.show ? {display:"inherit"} : {display:"none"}}
       >
         <h3>
           <u>Resume & Linkdin</u>
